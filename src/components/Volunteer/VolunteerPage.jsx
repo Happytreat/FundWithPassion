@@ -19,7 +19,7 @@ export const VolunteerPage = () => (
 				src= { flood }
 			/>
 			}
-			actions={[<a href="./VolunSign"><Icon type="heart"/> </a>, <Icon type="edit" />, <Icon type="ellipsis" />]}
+			actions={[<a href="./VolunteerSignup"><Icon type="heart"/></a>, <Icon type="edit" />, <Icon type="ellipsis" />]}
 		>
 		<Meta
 			avatar={<Avatar src={ profile } />}
