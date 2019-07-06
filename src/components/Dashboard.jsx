@@ -4,7 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Logo } from './Logo'
 import VictimPage from "./VictimPage";
 
-const { TabPane } = Tabs
+const { TabPane } = Tabs;
 
 class Dashboard extends Component {
 	render() {
