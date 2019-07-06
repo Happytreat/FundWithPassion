@@ -38,5 +38,11 @@ export const Home = () => (
 		<h2> Join us help people help themselves! </h2>
 
 		<h3><b>How does it work?</b></h3>
+		Step 1:
+		<br />
+		Step 2:
+		<br />
+		Step 3:
+
 	</div>
 )
