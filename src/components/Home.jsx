@@ -36,5 +36,7 @@ export const Home = () => (
 		</Carousel>
 
 		<h2> Join us help people help themselves! </h2>
+
+		<h3><b>How does it work?</b></h3>
 	</div>
 )
