@@ -1,5 +1,8 @@
 import React from 'react'
 import { Badge, Avatar, Typography, Card, Icon } from 'antd'
+import Button from 'react-bootstrap/Button';
+
+// Images
 import flood from "../../assets/floodtrump.jfif"
 import profile from "../../assets/profile.jfif"
 import earthquake from "../../assets/earthquake.jpeg"
@@ -42,6 +45,18 @@ export const VolunteerPage = () => (
 			title="Earthquake Victim 1"
 			description="This is the description"
 		/>
-		</Card>,
+		</Card>
+
+		<Card style={{ width: '18rem' }}>
+			<Card.Img variant="top" src="holder.js/100px180" />
+			<Card.Body>
+				<Card.Title>Card Title</Card.Title>
+				<Card.Text>
+				Some quick example text to build on the card title and make up the bulk of
+				the card's content.
+				</Card.Text>
+				<Button variant="primary">Go somewhere</Button>
+			</Card.Body>
+		</Card>
 	</div>
 )
