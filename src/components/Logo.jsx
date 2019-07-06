@@ -13,11 +13,11 @@ export const Logo = () => (
 			<Grid item xs={10}>
 				<a href="/">
 					<img
-						src="https://robohash.org/robobest"
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbvZK-QSYsgWyKU7Gc0wXrBLGeJV79lTd6-M0vBA4Q-GA-HUKiQg"
 						alt="logo"
-						style={{ width: 60, height: 50, paddingRight: 10, display: 'inline' }}
+						style={{ width: 60, height: 80, paddingRight: 10, display: 'inline' }}
 					/>
-					<h4 style={{ fontWeight: 700, display: 'inline' }}>Fund With Passion</h4>
+					<h1 style={{ fontWeight: 700, display: 'inline' }}>Fund with Passion</h1>
 				</a>
 			</Grid>
 			<Grid item xs={2}>
@@ -26,7 +26,7 @@ export const Logo = () => (
 				</Text>
 				{'      '}
 				<Badge count={3} style={{ paddingLeft: '5%' }}>
-					<Avatar src={Display} style={{ height: 50, width: 50 }} />
+					<Avatar icon="user" />
 				</Badge>
 			</Grid>
 		</Grid>
