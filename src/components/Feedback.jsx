@@ -1,6 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react';
 import { Checkbox } from 'antd';
 import { Input } from 'antd';
+import { Comment, Avatar } from 'antd';
+import ReactDOM from 'react-dom';
+
+
 
 
 function onChange(checkedValues) {
@@ -30,7 +34,13 @@ export const Feedback = () => (
 		<br />
 		<Input placeholder="Write your feedback or questions here..."  />
 		<br />
-		
+		<font size = "5" > Frequently Asked questions </font>
+		<br />
+		1. 
+		<br />
+		2.
+		<br />
+		3.
 	</div>
 )
 
