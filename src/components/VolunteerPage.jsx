@@ -1,6 +1,5 @@
 import React from 'react'
 import { Badge, Avatar, Typography, Card, Icon } from 'antd'
-import { Grid } from '@material-ui/core'
 import flood from "../assets/floodtrump.jfif"
 import profile from "../assets/profile.jfif"
 import earthquake from "../assets/earthquake.jpeg"
@@ -21,11 +20,11 @@ export const VolunteerPage = () => (
 			}
 			actions={[<Icon type="heart" />, <Icon type="edit" />, <Icon type="ellipsis" />]}
 		>
-			<Meta
+		<Meta
 			avatar={<Avatar src={ profile } />}
 			title="Flood Victim 1"
 			description="This is the description"
-			/>
+		/>
 		</Card>
 		<br/>
 		<Card
@@ -38,11 +37,11 @@ export const VolunteerPage = () => (
 			}
 			actions={[<Icon type="heart" />, <Icon type="edit" />, <Icon type="ellipsis" />]}
 		>
-			<Meta
+		<Meta
 			avatar={<Avatar src={ profile }  />}
 			title="Earthquake Victim 1"
 			description="This is the description"
-			/>
+		/>
 		</Card>,
 	</div>
 )
