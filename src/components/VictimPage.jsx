@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import { List, Card } from 'antd';
+import Button from "antd/es/button";
 
 const data = [
     {
@@ -17,6 +18,16 @@ const data = [
 ];
 
 class VictimPage extends Component {
+    constructor() {
+        super();
+        this.state = { showForm: false }
+    }
+
+    _showForm = (bool) => {
+        this.setState({
+            showForm: bool
+        });
+    }
 
     render() {
         return (
@@ -28,11 +39,21 @@ class VictimPage extends Component {
                     dataSource={data}
                     renderItem={item => (
                         <List.Item>
-                            <Card title={item.title}>Click to get help</Card>
+                            <Card title={item.title} >
+                                <Button onClick={this._showForm.bind(null, true)}>
+                                    Click to get help
+                                </Button>
+                            </Card>
+
                         </List.Item>
                     )}
                 />
 
+                {
+                    this.state.showForm && (<div>
+                        <h3> Fill in the form below </h3>
+                    </div>)
+                }
             </div>
         )
     }
