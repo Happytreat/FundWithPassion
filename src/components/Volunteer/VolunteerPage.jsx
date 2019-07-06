@@ -1,5 +1,6 @@
 import React from 'react'
 import { Badge, Avatar, Typography, Card, Icon, Input } from 'antd'
+import './VolunteerPage.css'
 
 // Images
 import flood from "../../assets/floodtrump.jfif"
@@ -16,39 +17,85 @@ export const VolunteerPage = () => (
 		<Search placeholder="input search text" onSearch={value => console.log(value)} enterButton />
 		<br/>
 		<br/>
-		<Card
-			style={{ width: 300 }}
-			cover={
-			<img
-				alt="flood victim"
-				src= { flood }
-			/>
-			}
-			actions={[<a href = "https://www.google.com"><Icon type="heart" /></a>,
-			<a href = "https://www.yahoo.com"><Icon type="dollar" /></a>]}
-		>
-		<Meta
-			avatar={<Avatar src={ profile } />}
-			title="Flood Victim 1"
-			description="This is the description"
-		/>
-		</Card>
+		<div class="row">
+			<div class="column">
+				<Card
+					style={{ width: 300 }}
+					cover={
+					<img
+						alt="flood"
+						src= { flood }
+					/>
+					}
+					actions={[<a href = "https://www.google.com"><Icon type="heart" /></a>,
+					<a href = "https://www.yahoo.com"><Icon type="dollar" /></a>]}
+				>
+					<Meta
+						avatar={<Avatar src={ profile } />}
+						title="Flood Victim 1"
+						description="This is the description"
+					/>
+				</Card>
+			</div>
+			<div class="column">
+				<Card
+					style={{ width: 300 }}
+					cover={
+					<img
+						alt="earthquake"
+						src= { earthquake }
+					/>
+					}
+					actions={[<Icon type="heart" />, <Icon type="dollar" />]}
+				>
+					<Meta
+						avatar={<Avatar src={ profile }  />}
+						title="Earthquake Victim 1"
+						description="This is the description"
+					/>
+				</Card>
+			</div>
+		</div>
 		<br/>
-		<Card
-			style={{ width: 300 }}
-			cover={
-			<img
-				alt="flood victim"
-				src= { earthquake }
-			/>
-			}
-			actions={[<Icon type="heart" />, <Icon type="dollar" />]}
-		>
-		<Meta
-			avatar={<Avatar src={ profile }  />}
-			title="Earthquake Victim 1"
-			description="This is the description"
-		/>
-		</Card>
+		<div class="row">
+			<div class="column">
+				<Card
+					style={{ width: 300 }}
+					cover={
+					<img
+						alt="typhoon"
+						src= "https://assets.rappler.com/0F3B0AA1405B4FAFBC7A6D7A44C0E92B/img/62ACDFE84A054394B72B135043299AE4/IMG_9383_62ACDFE84A054394B72B135043299AE4.jpg"
+					/>
+					}
+					actions={[<a href = "https://www.google.com"><Icon type="heart" /></a>,
+					<a href = "https://www.yahoo.com"><Icon type="dollar" /></a>]}
+				>
+					<Meta
+						avatar={<Avatar src={ profile } />}
+						title="Typhoon Victim 1"
+						description="This is the description"
+					/>
+				</Card>
+			</div>
+			<div class="column">
+				<Card
+					style={{ width: 300 }}
+					cover={
+					<img
+						alt="volcano"
+						src= "https://allthatsinteresting.com/wordpress/wp-content/uploads/2018/05/bodies-of-pompeii.png"
+					/>
+					}
+					actions={[<Icon type="heart" />, <Icon type="dollar" />]}
+				>
+					<Meta
+						avatar={<Avatar src={ profile }  />}
+						title="Volcano Victim 1"
+						description="This is the description"
+					/>
+				</Card>
+			</div>
+		</div>
+		
 	</div>
 )
