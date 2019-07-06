@@ -1,6 +1,5 @@
 import React from 'react'
-import { Badge, Avatar, Typography, Card, Icon } from 'antd'
-import Button from 'react-bootstrap/Button';
+import { Badge, Avatar, Typography, Card, Icon, Input } from 'antd'
 
 // Images
 import flood from "../../assets/floodtrump.jfif"
@@ -10,9 +9,13 @@ import earthquake from "../../assets/earthquake.jpeg"
 // This is just a sample template. Please change logo! This logo is already used!
 // TODO: Shift material ui grid to antd Row and Col
 const { Meta } = Card;
+const { Search } = Input;
 
 export const VolunteerPage = () => (
 	<div>
+		<Search placeholder="input search text" onSearch={value => console.log(value)} enterButton />
+		<br/>
+		<br/>
 		<Card
 			style={{ width: 300 }}
 			cover={
@@ -45,18 +48,6 @@ export const VolunteerPage = () => (
 			title="Earthquake Victim 1"
 			description="This is the description"
 		/>
-		</Card>
-
-		<Card style={{ width: '18rem' }}>
-			<Card.Img variant="top" src="holder.js/100px180" />
-			<Card.Body>
-				<Card.Title>Card Title</Card.Title>
-				<Card.Text>
-				Some quick example text to build on the card title and make up the bulk of
-				the card's content.
-				</Card.Text>
-				<Button variant="primary">Go somewhere</Button>
-			</Card.Body>
 		</Card>
 	</div>
 )
