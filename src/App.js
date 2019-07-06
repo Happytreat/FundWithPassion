@@ -11,7 +11,7 @@ class App extends Component {
 		return (
 			<BrowserRouter>
 				<Switch>
-					<Route exact path="/" component={GameDashboard} />
+					<Route exact path="/" component={Dashboard} />
 					<Route exact path="/game" component={GameDashboard} />
 				</Switch>
 			</BrowserRouter>
