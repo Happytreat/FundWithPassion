@@ -1,8 +1,8 @@
 import React from 'react'
 import { Badge, Avatar, Typography, Card, Icon } from 'antd'
-import flood from "../assets/floodtrump.jfif"
-import profile from "../assets/profile.jfif"
-import earthquake from "../assets/earthquake.jpeg"
+import flood from "../../assets/floodtrump.jfif"
+import profile from "../../assets/profile.jfif"
+import earthquake from "../../assets/earthquake.jpeg"
 
 // This is just a sample template. Please change logo! This logo is already used!
 // TODO: Shift material ui grid to antd Row and Col

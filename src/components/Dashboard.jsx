@@ -3,7 +3,7 @@ import { Tabs, PageHeader, Divider, Carousel } from 'antd'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Logo } from './Logo'
 import { Home } from './Home'
-import { VolunteerPage } from './VolunteerPage' 
+import { VolunteerPage } from './Volunteer/VolunteerPage' 
 import VictimPage from "./VictimPage";
 
 const { TabPane } = Tabs;
