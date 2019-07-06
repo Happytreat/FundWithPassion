@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Logo } from './Logo'
 import { Home } from './Home'
 import { VolunteerPage } from './Volunteer/VolunteerPage' 
+import { Feedback } from './Feedback'
 import VictimPage from "./VictimPage";
 
 const { TabPane } = Tabs;
@@ -33,9 +34,7 @@ class Dashboard extends Component {
 							Join our team
 						</TabPane>
 						<TabPane tab="Leave feedback" key="5">
-							Leave feedback
-						</TabPane>
-						<TabPane tab="Leave" key="6">
+							<Feedback />
 						</TabPane>
 					</Tabs>
 				</PageHeader>
