@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Tabs, PageHeader, Divider, Carousel } from 'antd'
 import { Logo } from './Logo'
 
-const { TabPane } = Tabs
+const { TabPane } = Tabs;
 
 class Dashboard extends Component {
 	render() {
