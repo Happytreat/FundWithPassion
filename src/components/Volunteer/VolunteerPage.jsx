@@ -18,7 +18,7 @@ export const VolunteerPage = () => (
 				src= { flood }
 			/>
 			}
-			actions={[<Icon type="heart" />, <Icon type="edit" />, <Icon type="ellipsis" />]}
+			actions={[<Icon type="heart" />, <Icon type="dollar" />]}
 		>
 		<Meta
 			avatar={<Avatar src={ profile } />}
@@ -35,7 +35,7 @@ export const VolunteerPage = () => (
 				src= { earthquake }
 			/>
 			}
-			actions={[<Icon type="heart" />, <Icon type="edit" />, <Icon type="ellipsis" />]}
+			actions={[<Icon type="heart" />, <Icon type="dollar" />]}
 		>
 		<Meta
 			avatar={<Avatar src={ profile }  />}
