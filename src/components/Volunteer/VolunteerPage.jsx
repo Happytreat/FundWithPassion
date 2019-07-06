@@ -3,6 +3,7 @@ import { Badge, Avatar, Typography, Card, Icon } from 'antd'
 import flood from "../../assets/floodtrump.jfif"
 import profile from "../../assets/profile.jfif"
 import earthquake from "../../assets/earthquake.jpeg"
+import VolunSign from "./VolunteerSignup"
 
 // This is just a sample template. Please change logo! This logo is already used!
 // TODO: Shift material ui grid to antd Row and Col
@@ -18,7 +19,7 @@ export const VolunteerPage = () => (
 				src= { flood }
 			/>
 			}
-			actions={[<Icon type="heart" />, <Icon type="edit" />, <Icon type="ellipsis" />]}
+			actions={[<a href="./VolunSign"><Icon type="heart"/> </a>, <Icon type="edit" />, <Icon type="ellipsis" />]}
 		>
 		<Meta
 			avatar={<Avatar src={ profile } />}

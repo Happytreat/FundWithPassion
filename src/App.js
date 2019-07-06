@@ -10,12 +10,14 @@ import VictimPage from "./components/VictimPage";
 class App extends Component {
 	render() {
 		return (
-			<BrowserRouter>
+			<BrowserRouter>	
 				<Switch>
 					<Route exact path="/" component={Dashboard} />
 					<Route exact path="/" component={VictimPage} />
+					<Route exact path="/" component={VictimPage} />
 					<Route exact path="/game" component={GameDashboard} />
-				</Switch>
+
+				</Switch> 
 			</BrowserRouter>
 		)
 	}
