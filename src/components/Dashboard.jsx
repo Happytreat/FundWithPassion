@@ -36,8 +36,6 @@ class Dashboard extends Component {
 						<TabPane tab="Leave feedback" key="5">
 							<Feedback />
 						</TabPane>
-						<TabPane tab="Leave" key="6">
-						</TabPane>
 					</Tabs>
 				</PageHeader>
 			</div>
