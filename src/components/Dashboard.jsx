@@ -3,6 +3,7 @@ import { Tabs, PageHeader, Divider, Carousel } from 'antd'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Logo } from './Logo'
 import { Home } from './Home'
+import { VolunteerPage } from './VolunteerPage' 
 import VictimPage from "./VictimPage";
 
 const { TabPane } = Tabs;
@@ -26,6 +27,7 @@ class Dashboard extends Component {
 
 								Donate money or resources!
 								Sign up as a volunteer
+								<VolunteerPage />
 						</TabPane>
 						<TabPane tab="Join Us" key="4">
 							Join our team
@@ -33,8 +35,7 @@ class Dashboard extends Component {
 						<TabPane tab="Leave feedback" key="5">
 							Leave feedback
 						</TabPane>
-						<TabPane tab="Leave" key="5">
-							<Logo />
+						<TabPane tab="Leave" key="6">
 						</TabPane>
 					</Tabs>
 				</PageHeader>
