@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Tabs, PageHeader, Divider, Carousel } from 'antd'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Logo } from './Logo'
+import VictimPage from "./VictimPage";
 
 const { TabPane } = Tabs
 
@@ -13,7 +15,6 @@ class Dashboard extends Component {
 					<Divider />
 					<Tabs defaultActiveKey="1" tabPosition="left" tabBarGutter>
 						<TabPane tab="Home" key="1">
-
 
                             <h2>Welcome Helpers!</h2>
 
@@ -45,8 +46,7 @@ class Dashboard extends Component {
 
 						</TabPane>
 						<TabPane tab="Ask for help" key="2">
-							Post on our platform what you need and have volunteers reach you!
-
+							<Route exact path="/" component={VictimPage} />
 						</TabPane>
 						<TabPane tab="Give or volunteer" key="3">
 							Help volunteer by fulfilling the existing requests made by people from around the world!
