@@ -3,6 +3,7 @@ import { Tabs, PageHeader, Divider } from 'antd'
 import { Logo } from '../Logo'
 import AboutGame from './AboutGame'
 import Summon from './Summon'
+import Tournament from './Tournament'
 
 const { TabPane } = Tabs;
 
@@ -25,7 +26,7 @@ class GameDashboard extends Component {
             <Summon />
           </TabPane>
           <TabPane tab="View Tournaments" key="3">
-            View Tournaments
+            <Tournament />
           </TabPane>
         </Tabs>
       </div>
