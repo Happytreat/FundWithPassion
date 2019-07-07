@@ -5,8 +5,8 @@ import { Logo } from './Logo'
 import { Home } from './Home'
 import { VolunteerPage } from './Volunteer/VolunteerPage' 
 import { Feedback } from './Feedback'
-import { Verify } from './Verify    .;l'
-import VictimPage from "./VictimPage";......................,. -
+import { Verify } from './Verify'
+import VictimPage from "./VictimPage"
 
 const { TabPane } = Tabs;
 
