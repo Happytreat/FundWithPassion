@@ -36,7 +36,12 @@ class Dashboard extends Component {
 
 						</TabPane>
 						<TabPane tab="Join Us" key="4">
-							Join our team
+						<h1><b>Publish Games on Fund With Passion</b></h1>
+						This is the documentation for the Fund With Passion Public API.
+						<br />
+						Request to sign up as Fund With Passion developer here and our team will send over your user/dapp information with an API token:
+						<br />
+https://goo.gl/forms/jyVVqNUKOLfgvvyp1                                                                                                                                                                                                                                                                                           
 						</TabPane>
 						<TabPane tab="Leave feedback" key="5">
 							<Feedback />
