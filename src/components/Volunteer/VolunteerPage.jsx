@@ -14,7 +14,7 @@ const { Meta } = Card;
 const { Search } = Input;
 
 const listData = [];
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 15; i++) {
   listData.push({
     href: '',
     title: `Victim ${i}`,
@@ -141,7 +141,7 @@ export const VolunteerPage = () => (
 			onChange: page => {
 				console.log(page);
 			},
-			pageSize: 3,
+			pageSize: 10,
 			}}
 			dataSource={listData}
 			footer={
