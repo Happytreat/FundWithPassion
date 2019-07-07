@@ -26,10 +26,6 @@ class Dashboard extends Component {
 							<iframe src="https://assistant-chat-us-south.watsonplatform.net/web/public/ba5476dc-f0d7-4484-a6bd-e7470cb3c828" height="800" width="400"></iframe>
 						</TabPane>
 						<TabPane tab="Give or volunteer" key="3">
-							Help fulfill the existing requests made by people from around the world!
-
-								Donate money or resources!
-								Sign up as a volunteer
 								<VolunteerPage />
 						</TabPane>
 						<TabPane tab="Join Us" key="4">
