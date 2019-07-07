@@ -34,14 +34,18 @@ class Dashboard extends Component {
 							<VolunteerPage />
 
 						</TabPane>
-						<TabPgiane tab="Join Us" key="4">
+						<TabPane tab="Join Us" key="4">
 						<h1><b>Publish Games on Fund With Passion</b></h1>
 						This is the documentation for the Fund With Passion Public API.
 						<br />
 						Request to sign up as Fund With Passion developer here and our team will send over your user/dapp information with an API token:
 						<br />
-							<a href="https://goo.gl/forms/jyVVqNUKOLfgvvyp1"> Fill this form! </a>
-						</TabPgiane>
+
+							<iframe
+								src="https://docs.google.com/forms/d/e/1FAIpQLSe0Q1BAcBZd-hN17aOGekUA9y2naLlZOVedNnvoXt8pcC138Q/viewform?embedded=true"
+								width="640" height="945" frameBorder="0" marginHeight="0" marginWidth="0"> Loading...
+							</iframe>
+						</TabPane>
 						<TabPane tab="Leave feedback" key="5">
 							<Feedback />
 						</TabPane>
