@@ -13,6 +13,8 @@ import earthquake from "../../assets/earthquake.jpeg"
 const { Meta } = Card;
 const { Search } = Input;
 
+const images = ["https://assets.rappler.com/0F3B0AA1405B4FAFBC7A6D7A44C0E92B/img/62ACDFE84A054394B72B135043299AE4/IMG_9383_62ACDFE84A054394B72B135043299AE4.jpg",
+"https://assets.rappler.com/0F3B0AA1405B4FAFBC7A6D7A44C0E92B/img/62ACDFE84A054394B72B135043299AE4/IMG_9383_62ACDFE84A054394B72B135043299AE4.jpg"]
 const listData = [];
 for (let i = 0; i < 4; i++) {
   listData.push({
@@ -20,9 +22,9 @@ for (let i = 0; i < 4; i++) {
     title: `Victim ${i}`,
     avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
     description:
-    	`Victim ${i} description`,
+    	`Location: xxx`,
     content:
-		`Victim ${i} body content`,
+		`Victim ${i} story Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
   });
 }
 
