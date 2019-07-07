@@ -1,5 +1,5 @@
 import React from 'react'
-import { Badge, Avatar, Typography } from 'antd'
+import { Button, Radio, Badge, Avatar, Typography } from 'antd'
 import { Grid } from '@material-ui/core'
 import Display from '../assets/bslogo.jpg'
 
@@ -28,6 +28,11 @@ export const Logo = () => (
 				<Badge count={3} style={{ paddingLeft: '5%' }}>
 					<Avatar icon="user" />
 				</Badge>
+				<br/>
+				<Text level={4} strong>
+					Top up wallet{' '}
+				</Text>
+				<Button type="primary" shape="circle" icon="wallet" align="right"/>
 			</Grid>
 		</Grid>
 	</div>

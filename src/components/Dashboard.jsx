@@ -27,11 +27,13 @@ class Dashboard extends Component {
 
 						</TabPane>
 						<TabPane tab="Give or volunteer" key="3">
+
 							Help fulfill the existing requests made by people from around the world!
 
 							Donate money or resources!
 							Sign up as a volunteer
 							<VolunteerPage />
+
 						</TabPane>
 						<TabPane tab="Join Us" key="4">
 							Join our team
