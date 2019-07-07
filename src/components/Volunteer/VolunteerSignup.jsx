@@ -65,7 +65,7 @@ class VolSignBkgd extends Component {
                 
               {/* Pay and start the challenge! </Button>*/}
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href = { VolunteerPage }><Button size={360}>Cancel</Button></a>
+              <a href = "/"><Button size={360}>Cancel</Button></a>
       
 						</TabPane>
 						<TabPane tab="Join Us" key="4">
