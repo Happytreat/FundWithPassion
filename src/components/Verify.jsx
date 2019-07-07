@@ -64,7 +64,8 @@ class ImageUpload extends React.Component {
 		</div>
 	  )
 	}
+	
   }
-  Verify(<ImageUpload/>, document.getElementById("mainApp"));
+  
 
   
