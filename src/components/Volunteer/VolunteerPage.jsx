@@ -1,5 +1,5 @@
 import React from 'react'
-import { Badge, Avatar, Typography, Card, Icon, Input } from 'antd'
+import { Avatar, Typography, Card, Icon, Input } from 'antd'
 import './VolunteerPage.css'
 
 // Images
@@ -9,11 +9,27 @@ import earthquake from "../../assets/earthquake.jpeg"
 
 // This is just a sample template. Please change logo! This logo is already used!
 // TODO: Shift material ui grid to antd Row and Col
+
 const { Meta } = Card;
 const { Search } = Input;
 
+class ButtonSize extends React.Component {
+	state = {
+	  size: 'large',
+	};
+  
+	handleSizeChange = e => {
+	//   this.setState({ size: e.target.value });
+	};
+}
+
 export const VolunteerPage = () => (
 	<div>
+		Help fulfill the existing requests made by people from around the world!
+
+		Donate money or resources!
+		Sign up as a volunteer
+
 		<Search placeholder="input search text" onSearch={value => console.log(value)} enterButton />
 		<br/>
 		<br/>
