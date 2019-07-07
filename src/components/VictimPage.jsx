@@ -116,7 +116,9 @@ class VictimPage extends Component {
                     </div>)
                 }
             </div>
+            
         )
     }
+   
 }
 export default VictimPage
