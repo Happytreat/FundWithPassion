@@ -6,6 +6,7 @@ import { Home } from './Home'
 import { VolunteerPage } from './Volunteer/VolunteerPage' 
 import { Feedback } from './Feedback'
 import { Verify } from './Verify'
+import VerifyAgain from './VerifyAgain'
 import VictimPage from "./VictimPage"
 
 const { TabPane } = Tabs;
@@ -24,7 +25,6 @@ class Dashboard extends Component {
 						<TabPane tab="Ask for help" key="2">
 							<Route exact path="/" component={VictimPage} />
 							<iframe src="https://assistant-chat-us-south.watsonplatform.net/web/public/ba5476dc-f0d7-4484-a6bd-e7470cb3c828" height="800" width="400"></iframe>
-
 						</TabPane>
 						<TabPane tab="Give or volunteer" key="3">
 
@@ -36,13 +36,18 @@ class Dashboard extends Component {
 
 						</TabPane>
 						<TabPane tab="Join Us" key="4">
-							Join our team
+						<h1><b>Publish Games on Fund With Passion</b></h1>
+						This is the documentation for the Fund With Passion Public API.
+						<br />
+						Request to sign up as Fund With Passion developer here and our team will send over your user/dapp information with an API token:
+						<br />
+https://goo.gl/forms/jyVVqNUKOLfgvvyp1                                                                                                                                                                                                                                                                                           
 						</TabPane>
 						<TabPane tab="Leave feedback" key="5">
 							<Feedback />
 						</TabPane>
 						<TabPane tab="Identity verification" key="6">
-							<Verify />
+							<VerifyAgain />
 						</TabPane>
 					</Tabs>
 				</PageHeader>
