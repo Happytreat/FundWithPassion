@@ -1,7 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 export const Image = (link) => {
   return (
-    <img src={link.link} alt="Robos" />
+    <div style={{display: 'inline'}}>
+      <img src={link.link} alt="Robos" />
+      {link.link.split('/')[3]}
+    </div>
   )
 };
