@@ -5,6 +5,7 @@ import { Logo } from './Logo'
 import { Home } from './Home'
 import { VolunteerPage } from './Volunteer/VolunteerPage' 
 import { Feedback } from './Feedback'
+import { Verify } from './Verify'
 import VictimPage from "./VictimPage";
 
 const { TabPane } = Tabs;
@@ -24,7 +25,7 @@ class Dashboard extends Component {
 							<Route exact path="/" component={VictimPage} />
 						</TabPane>
 						<TabPane tab="Give or volunteer" key="3">
-							Help volunteer by fulfilling the existing requests made by people from around the world!
+							Help fulfill the existing requests made by people from around the world!
 
 								Donate money or resources!
 								Sign up as a volunteer
@@ -36,7 +37,8 @@ class Dashboard extends Component {
 						<TabPane tab="Leave feedback" key="5">
 							<Feedback />
 						</TabPane>
-						<TabPane tab="Leave" key="6">
+						<TabPane tab="Identity verification" key="6">
+							<Verify />
 						</TabPane>
 					</Tabs>
 				</PageHeader>
