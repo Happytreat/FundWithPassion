@@ -14,7 +14,7 @@ const { TabPane } = Tabs;
 class Dashboard extends Component {
 	render() {
 		return (
-			<div style={{ padding: '10px', leftMargin: '50px', fontFamily: 'Helvetica' }}>
+			<div style={{ padding:'10px', leftMargin: '50px', fontFamily: 'Helvetica' }}>
 				<PageHeader>
 					<Logo />
 					<Divider />
@@ -24,13 +24,16 @@ class Dashboard extends Component {
 						</TabPane>
 						<TabPane tab="Ask for help" key="2">
 							<Route exact path="/" component={VictimPage} />
-							<iframe
-								src="https://assistant-chat-us-south.watsonplatform.net/web/public/ba5476dc-f0d7-4484-a6bd-e7470cb3c828"
-								height="800" width="400">
-							</iframe>
+							<iframe src="https://assistant-chat-us-south.watsonplatform.net/web/public/ba5476dc-f0d7-4484-a6bd-e7470cb3c828" height="800" width="400"></iframe>
 						</TabPane>
 						<TabPane tab="Give or volunteer" key="3">
-								<VolunteerPage />
+
+							Help fulfill the existing requests made by people from around the world!
+
+							Donate money or resources!
+							Sign up as a volunteer
+							<VolunteerPage />
+
 						</TabPane>
 						<TabPane tab="Join Us" key="4">
 							Join our team
