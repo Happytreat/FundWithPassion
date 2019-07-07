@@ -51,11 +51,11 @@ export const Feedback = () => (
   	</div>,
 		<font size = "5" > Frequently Asked questions </font>
 		<br />
-		1. 
+		1. How do I volunteer my services?
 		<br />
-		2.
+		2. How do I donate?
 		<br />
-		3.
+		3. How do I summon my passionrobos?
 	</div>
 )
 
