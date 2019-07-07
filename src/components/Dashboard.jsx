@@ -6,6 +6,7 @@ import { Home } from './Home'
 import { VolunteerPage } from './Volunteer/VolunteerPage' 
 import { Feedback } from './Feedback'
 import { Verify } from './Verify'
+import VerifyAgain from './VerifyAgain'
 import VictimPage from "./VictimPage"
 
 const { TabPane } = Tabs;
@@ -23,7 +24,10 @@ class Dashboard extends Component {
 						</TabPane>
 						<TabPane tab="Ask for help" key="2">
 							<Route exact path="/" component={VictimPage} />
-							<iframe src="https://assistant-chat-us-south.watsonplatform.net/web/public/ba5476dc-f0d7-4484-a6bd-e7470cb3c828" height="800" width="400"></iframe>
+							<iframe
+								src="https://assistant-chat-us-south.watsonplatform.net/web/public/ba5476dc-f0d7-4484-a6bd-e7470cb3c828"
+								height="800" width="400">
+							</iframe>
 						</TabPane>
 						<TabPane tab="Give or volunteer" key="3">
 								<VolunteerPage />
@@ -35,7 +39,7 @@ class Dashboard extends Component {
 							<Feedback />
 						</TabPane>
 						<TabPane tab="Identity verification" key="6">
-							<Verify />
+							<VerifyAgain />
 						</TabPane>
 					</Tabs>
 				</PageHeader>
