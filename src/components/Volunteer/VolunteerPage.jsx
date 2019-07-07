@@ -154,8 +154,8 @@ export const VolunteerPage = () => (
 					<IconText type="like-o" text="156" />,
 					<IconText type="message" text="2" />,
 				]}
-				actions={[<a href = "https://www.google.com"><IconText type="heart" text="Volunteer" /></a>,
-					<a href = "https://www.yahoo.com"><IconText type="dollar" text="Donate" /></a>]}
+				actions={[<a href = "/Volunteer"><IconText type="heart" text="Volunteer" /></a>,
+					<a href = "/Volunteer"><IconText type="dollar" text="Donate" /></a>]}
 				extra={
 				<img
 					width={272}
