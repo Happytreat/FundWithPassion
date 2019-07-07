@@ -1,5 +1,5 @@
 import React from 'react'
-import { Avatar, Typography, Card, Icon, Input } from 'antd'
+import { List, Avatar, Typography, Card, Icon, Input } from 'antd'
 import './VolunteerPage.css'
 
 // Images
@@ -12,6 +12,26 @@ import earthquake from "../../assets/earthquake.jpeg"
 
 const { Meta } = Card;
 const { Search } = Input;
+
+const listData = [];
+for (let i = 0; i < 4; i++) {
+  listData.push({
+    href: '',
+    title: `Victim ${i}`,
+    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+    description:
+    	`Victim ${i} description`,
+    content:
+		`Victim ${i} body content`,
+  });
+}
+
+const IconText = ({ type, text }) => (
+  <span>
+    <Icon type={type} style={{ marginRight: 8 }} />
+    {text}
+  </span>
+);
 
 class ButtonSize extends React.Component {
 	state = {
@@ -33,7 +53,7 @@ export const VolunteerPage = () => (
 		<Search placeholder="input search text" onSearch={value => console.log(value)} enterButton />
 		<br/>
 		<br/>
-		<div class="row">
+		{/* <div class="row">
 			<div class="column">
 				<Card
 					style={{ width: 300 }}
@@ -112,7 +132,50 @@ export const VolunteerPage = () => (
 					/>
 				</Card>
 			</div>
-		</div>
+		</div> */}
+
+		<List
+			itemLayout="vertical"
+			size="large"
+			pagination={{
+			onChange: page => {
+				console.log(page);
+			},
+			pageSize: 3,
+			}}
+			dataSource={listData}
+			footer={
+			<div>
+				
+			</div>
+			}
+			renderItem={item => (
+			<List.Item
+				key={item.title}
+				actions={[
+					<IconText type="star-o" text="156" />,
+					<IconText type="like-o" text="156" />,
+					<IconText type="message" text="2" />,
+				]}
+				actions={[<a href = "https://www.google.com"><IconText type="heart" text="Volunteer" /></a>,
+					<a href = "https://www.yahoo.com"><IconText type="dollar" text="Donate" /></a>]}
+				extra={
+				<img
+					width={272}
+					alt="logo"
+					src= "https://assets.rappler.com/0F3B0AA1405B4FAFBC7A6D7A44C0E92B/img/62ACDFE84A054394B72B135043299AE4/IMG_9383_62ACDFE84A054394B72B135043299AE4.jpg"
+				/>
+				}
+			>
+				<List.Item.Meta
+					avatar={<Avatar src={item.avatar} />}
+					title={<a href={item.href}>{item.title}</a>}
+					description={item.description}
+				/>
+				{item.content}
+			</List.Item>
+			)}
+		/>,
 		
 	</div>
 )
