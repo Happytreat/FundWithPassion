@@ -46,16 +46,18 @@ export const Feedback = () => (
 		<Input placeholder="Write your feedback or questions here..."  />
 		<br />
 		<br />
-		<div>
 		<Button type="dashed">Submit</Button>
-  	</div>,
+
+		<br/>
 		<font size = "5" > Frequently Asked questions </font>
 		<br />
-		1. 
+
+		<h4/> <b>Q. How will I know if my money is put to good use? </b>
+		<p/>A. We will keep you posted through our social media and e-mail newsletter about the changes we make and people we affect!
 		<br />
-		2.
+		<h4/> <b> Q. Do I have to take part in the game? </b>
+		<p/>A. No! Feel free to directly donate to our beneficiaries through our platform!
 		<br />
-		3.
 	</div>
 )
 

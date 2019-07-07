@@ -24,8 +24,7 @@ class Dashboard extends Component {
 						</TabPane>
 						<TabPane tab="Ask for help" key="2">
 							<Route exact path="/" component={VictimPage} />
-							<iframe src="https://assistant-chat-us-south.watsonplatform.net/web/public/ba5476dc-f0d7-4484-a6bd-e7470cb3c828" height="800" width="400"></iframe>
-						</TabPane>
+							</TabPane>
 						<TabPane tab="Give or volunteer" key="3">
 
 							Help fulfill the existing requests made by people from around the world!
@@ -41,13 +40,13 @@ class Dashboard extends Component {
 						<br />
 						Request to sign up as Fund With Passion developer here and our team will send over your user/dapp information with an API token:
 						<br />
-https://goo.gl/forms/jyVVqNUKOLfgvvyp1                                                                                                                                                                                                                                                                                           
+							<a href="https://goo.gl/forms/jyVVqNUKOLfgvvyp1"> Fill this form! </a>
 						</TabPane>
 						<TabPane tab="Leave feedback" key="5">
 							<Feedback />
 						</TabPane>
-						<TabPane tab="Identity verification" key="6">
-							<VerifyAgain />
+						<TabPane tab="Chat with us!" key="6">
+							<iframe src="https://assistant-chat-us-south.watsonplatform.net/web/public/ba5476dc-f0d7-4484-a6bd-e7470cb3c828" height="800" width="400"></iframe>
 						</TabPane>
 					</Tabs>
 				</PageHeader>

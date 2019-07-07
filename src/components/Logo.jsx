@@ -32,7 +32,7 @@ export const Logo = () => (
 				<Text level={4} strong>
 					Top up wallet{' '}
 				</Text>
-				<Button type="primary" shape="circle" icon="wallet" align="right"/>
+				<a href="https://internet-banking.dbs.com.sg/IB/Welcome"> <Button type="primary" shape="circle" icon="wallet" align="right"/> </a>
 			</Grid>
 		</Grid>
 	</div>

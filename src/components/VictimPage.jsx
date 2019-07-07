@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import { List, Card } from 'antd';
 import Button from "antd/es/button";
+import ImageUploader from "react-images-upload";
 
 const data = [
     {
@@ -17,6 +18,8 @@ const data = [
     },
 ];
 
+
+
 class VictimPage extends Component {
 
 
@@ -24,6 +27,7 @@ class VictimPage extends Component {
         super()
         this.state = {
             showForm: false ,
+            pictures: [],
             formControls: {
                 item: {
                     value: 'enter resource needed'
@@ -39,7 +43,14 @@ class VictimPage extends Component {
                 }
             }
         }
+        this.onDrop = this.onDrop.bind(this);
 
+    }
+
+    onDrop(picture) {
+        this.setState({
+            pictures: this.state.pictures.concat(picture),
+        });
     }
 
     _showForm = (bool) => {
@@ -108,6 +119,13 @@ class VictimPage extends Component {
                                 <input type="text" name="quantity" value = {this.state.quantity} onChange={this.changeHandler} />
                             </label>
                             </p>
+                            <ImageUploader
+                                withIcon={true}
+                                buttonText='Choose images'
+                                onChange={this.onDrop}
+                                imgExtension={['.jpg', '.gif', '.png', '.gif']}
+                                maxFileSize={5242880}
+                            />
                             <p>
                             <input type="submit" value="Submit" />
                             </p>
