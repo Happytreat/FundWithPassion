@@ -35,6 +35,13 @@ export const Home = () => (
 			</div>
 		</Carousel>
 
-		<h2> Join us help people help themselves! </h2>
+		<h2><b>Join us help people help themselves!</b>  </h2>
+		Fund with Passion is a fund-raising and entertainment platform specially made to help commmunities recover during times of disaster
+		<br />
+		<br />
+		<h3><b>How does it work?</b></h3>
+		
+		Beneficiaries will open a fund raising campaign. The general public will be able to donate directly to their preferred beneficiary or participate in a game where 50% of the participation fee will be given to beneficiaries.
+		
 	</div>
 )
