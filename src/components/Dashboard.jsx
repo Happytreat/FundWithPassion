@@ -41,7 +41,7 @@ class Dashboard extends Component {
 						<br />
 						Request to sign up as Fund With Passion developer here and our team will send over your user/dapp information with an API token:
 						<br />
-https://goo.gl/forms/jyVVqNUKOLfgvvyp1                                                                                                                                                                                                                                                                                           
+						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe0Q1BAcBZd-hN17aOGekUA9y2naLlZOVedNnvoXt8pcC138Q/viewform?embedded=true" width="640" height="945" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 						</TabPane>
 						<TabPane tab="Leave feedback" key="5">
 							<Feedback />
