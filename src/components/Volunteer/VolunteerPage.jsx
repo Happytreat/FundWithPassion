@@ -83,15 +83,15 @@ export const VolunteerPage = () => (
 					cover={
 					<img
 						alt="volcano"
-						//src= "https://allthatsinteresting.com/wordpress/wp-content/uploads/2018/05/bodies-of-pompeii.png"
-						src = "https://previews.123rf.com/images/gelpi/gelpi1206/gelpi120600074/14018505-fat-man-drinking-a-jar-of-beer-isolated-on-white-background.jpg"
+						src= "https://allthatsinteresting.com/wordpress/wp-content/uploads/2018/05/bodies-of-pompeii.png"
+						// src = "https://previews.123rf.com/images/gelpi/gelpi1206/gelpi120600074/14018505-fat-man-drinking-a-jar-of-beer-isolated-on-white-background.jpg"
 					/>
 					}
-					actions={[<Icon type="heart" />, <a href = "https://www.youtube.com/watch?v=gXge6td1jfM"><Icon type="dollar" /></a>]}
+					actions={[<Icon type="heart" />, <a href = ''><Icon type="dollar" /></a>]}
 				>
 					<Meta
 						avatar={<Avatar src={ profile }  />}
-						title="Macdonalds Victim 1"
+						title="Volcano Victim 1"
 						description="This is the description"
 					/>
 				</Card>
