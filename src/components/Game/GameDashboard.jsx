@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Tabs, PageHeader, Divider } from 'antd'
 import { Logo } from '../Logo'
 import AboutGame from './AboutGame'
+import Summon from './Summon'
 
 const { TabPane } = Tabs;
 
@@ -21,7 +22,7 @@ class GameDashboard extends Component {
             <AboutGame />
           </TabPane>
           <TabPane tab="Summon PassionRobos" key="2">
-            Summon PassionRobos
+            <Summon />
           </TabPane>
           <TabPane tab="View Tournaments" key="3">
             View Tournaments
