@@ -47,12 +47,7 @@ class ButtonSize extends React.Component {
 
 export const VolunteerPage = () => (
 	<div>
-		Help fulfill the existing requests made by people from around the world!
-
-		Donate money or resources!
-		Sign up as a volunteer
-
-		<Search placeholder="input search text" onSearch={value => console.log(value)} enterButton />
+		<Search placeholder="Search by location, cause or name" onSearch={value => console.log(value)} enterButton />
 		<br/>
 		<br/>
 		{/* <div class="row">
