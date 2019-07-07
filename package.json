@@ -5,16 +5,17 @@
   "dependencies": {
     "@material-ui/core": "^4.1.3",
     "antd": "^3.20.0",
+    "cloudinary": "*",
+    "express": "*",
+    "express-fileupload": "*",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-images-upload": "^1.2.7",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "reactjs-popup": "^1.4.1",
     "redux": "^4.0.1",
-    "redux-saga": "^1.0.4",
-    "express": "*",
-    "express-fileupload": "*",
-    "cloudinary": "*"
+    "redux-saga": "^1.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
